@@ -1,0 +1,14 @@
+name: "Setup jghiloni/semver CLI"
+description: "Sets up jghiloni/semver CLI in your Github Actions workflow"
+author: "Josh Ghiloni"
+inputs:
+  version:
+    description: "The version of the CLI to install, or 'latest'"
+    default: "latest"
+    required: false
+runs:
+  using: node24
+  main: "dist/index.js"
+branding:
+  icon: server
+  color: green

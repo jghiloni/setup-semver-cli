@@ -1,0 +1,39 @@
+{
+  "name": "setup-semver-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js --out dist"
+  },
+  "keywords": [],
+  "author": "Josh Ghiioni",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jghiloni/setup-semver-cli.git"
+  },
+  "license": "MIT",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.10.1",
+      "onFail": "download"
+    }
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@12.10.1",
+  "type": "module",
+  "dependencies": {
+    "@actions/core": "^3.0.1",
+    "@actions/exec": "^3.0.0",
+    "@actions/github": "^9.1.1",
+    "@actions/io": "^3.0.2",
+    "@actions/tool-cache": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "@vercel/ncc": "^0.45.0"
+  }
+}
